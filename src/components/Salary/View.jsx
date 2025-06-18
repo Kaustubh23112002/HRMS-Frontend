@@ -11,7 +11,7 @@ const View = () => {
  const {user} = useAuth()
   const fetchSalaries = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/api/salary/${id}/${user.role}`, {
+      const response = await axios.get(`https://hrms-backend-two.vercel.app/api/salary/${id}/${user.role}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

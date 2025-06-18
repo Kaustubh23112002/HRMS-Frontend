@@ -30,7 +30,7 @@ const {user} = useAuth()
       const fetchEmployee = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/employee/${id}/${user.role}`,
+          `https://hrms-backend-two.vercel.app/api/employee/${id}/${user.role}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -70,7 +70,7 @@ const {user} = useAuth()
    
     try {
       const response = await axios.put(
-        `http://localhost:8000/api/employee/${id}`,
+        `https://hrms-backend-two.vercel.app/api/employee/${id}`,
         employee,
         {
           headers: {

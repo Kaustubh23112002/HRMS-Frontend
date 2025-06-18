@@ -13,7 +13,7 @@ const List = () => {
     const fetchEmployees = async () => {
       setEmpLoading(true);
       try {
-        const response = await axios.get("http://localhost:8000/api/employee", {
+        const response = await axios.get("https://hrms-backend-two.vercel.app/api/employee", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -32,7 +32,7 @@ const List = () => {
               <img
                 width={50}
                 className="rounded-full"
-                src={`http://localhost:8000/${emp.userId.profileImage}`}
+                src={`https://hrms-backend-two.vercel.app/${emp.userId.profileImage}`}
               />
             ),
             action: <EmployeeButtons DepId={emp._id} />,

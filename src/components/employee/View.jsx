@@ -14,7 +14,7 @@ const View = () => {
     const fetchEmployee = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/employee/${id}/${user.role}`,
+          `https://hrms-backend-two.vercel.app/api/employee/${id}/${user.role}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -44,7 +44,7 @@ const View = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <img
-            src={`http://localhost:8000/${employee.userId.profileImage}`}
+            src={`https://hrms-backend-two.vercel.app/${employee.userId.profileImage}`}
             className="rounded-full border w-72"
           />
         </div>

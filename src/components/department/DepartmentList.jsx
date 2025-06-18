@@ -19,7 +19,7 @@ const [filteredDepartments, setFilteredDepartments] = useState([])
    const fetchDepartments = async () => {
       setDepLoading(true)
       try {
-        const response = await axios.get('http://localhost:8000/api/department',{
+        const response = await axios.get('https://hrms-backend-two.vercel.app/api/department',{
           headers: {
             "Authorization" : `Bearer ${localStorage.getItem('token')}`
           }
