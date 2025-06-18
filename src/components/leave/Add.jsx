@@ -20,7 +20,7 @@ const Add = () => {
 
     try {
         const response = await axios.post(
-          `https://hrms-backend-two.vercel.app/api/leave/add`,leave,
+          `https://hrms-backend-o2gb.onrender.com/api/leave/add`,leave,
           {
             headers: {
               "Authorization": `Bearer ${localStorage.getItem("token")}`,

@@ -27,7 +27,7 @@ const Setting = () => {
     } else {
         try {
             const response = await axios.put(
-                "https://hrms-backend-two.vercel.app/api/setting/change-password",
+                "https://hrms-backend-o2gb.onrender.com/api/setting/change-password",
                 setting,
                 {
                     headers: {

@@ -9,7 +9,7 @@ const AdminSummary = () => {
   useEffect(() => {
     const fetchSummary = async () => {
       try {
-        const summary = await axios.get('https://hrms-backend-two.vercel.app/api/dashboard/summary',{
+        const summary = await axios.get('https://hrms-backend-o2gb.onrender.com/api/dashboard/summary',{
           headers : {
             "Authorization" : `Bearer ${localStorage.getItem('token')}`
           }

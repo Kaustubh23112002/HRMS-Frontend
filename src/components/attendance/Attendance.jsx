@@ -17,7 +17,7 @@ const Attendance = () => {
   const fetchAttendance = async () => {
       setLoading(true);
       try {
-        const response = await axios.get("https://hrms-backend-two.vercel.app/api/attendance", {
+        const response = await axios.get("https://hrms-backend-o2gb.onrender.com/api/attendance", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

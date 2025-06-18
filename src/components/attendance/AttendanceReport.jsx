@@ -16,7 +16,7 @@ const AttendanceReport = () => {
         query.append("date", dateFilter);
       }
       const response = await axios.get(
-        `https://hrms-backend-two.vercel.app/api/attendance/report?${query.toString()}`,
+        `https://hrms-backend-o2gb.onrender.com/api/attendance/report?${query.toString()}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

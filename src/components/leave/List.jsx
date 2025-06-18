@@ -13,7 +13,7 @@ const {user} = useAuth()
 
     const fetchLeaves= async () => {
     try {
-      const response = await axios.get(`https://hrms-backend-two.vercel.app/api/leave/${id}/${user.role}`, {
+      const response = await axios.get(`https://hrms-backend-o2gb.onrender.com/api/leave/${id}/${user.role}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

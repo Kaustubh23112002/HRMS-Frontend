@@ -41,7 +41,7 @@ const Add = () => {
 
     try {
       const response = await axios.post(
-        `https://hrms-backend-two.vercel.app/api/salary/add`,
+        `https://hrms-backend-o2gb.onrender.com/api/salary/add`,
         salary,
         {
           headers: {

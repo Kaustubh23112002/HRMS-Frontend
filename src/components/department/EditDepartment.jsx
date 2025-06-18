@@ -13,7 +13,7 @@ const EditDepartment = () => {
       setDepLoading(true);
       try {
         const response = await axios.get(
-          `https://hrms-backend-two.vercel.app/api/department/${id}`,
+          `https://hrms-backend-o2gb.onrender.com/api/department/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -45,7 +45,7 @@ const EditDepartment = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `https://hrms-backend-two.vercel.app/api/department/${id}`,
+        `https://hrms-backend-o2gb.onrender.com/api/department/${id}`,
         department,
         {
           headers: {

@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://hrms-backend-two.vercel.app/api/auth/login",
+        "https://hrms-backend-o2gb.onrender.com/api/auth/login",
         { email, password }
       );
       if (response.data.success) {
