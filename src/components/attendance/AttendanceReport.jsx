@@ -49,7 +49,12 @@ const AttendanceReport = () => {
       <h2 className="text-center text-2xl font-bold">Attendance Report</h2>
       <div>
         <h2 className="text-xl font-semibold">Filter by Date</h2>
-        <input type="date" className="border bg-gray-100" />
+        <input
+          type="date"
+          className="border bg-gray-100"
+          value={dateFilter || ""}
+          onChange={(e) => setDateFilter(e.target.value)}
+        />
       </div>
       {loading ? (
         <div> Loading...</div>
