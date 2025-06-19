@@ -64,12 +64,12 @@ export const columns = [
                 Sick
                 </button>
                 <button
-                 className='px-4 py-2 bg-yellow-500 text-black'
+                 className='px-4 py-2 bg-yellow-500 text-white'
                  onClick={() => markEmployee("leave", employeeId)}>
                  Leave
                 </button>
                 <button
-                 className='px-4 py-2 bg-blue-900 text-black'
+                 className='px-4 py-2 bg-blue-900 text-white'
                  onClick={() => markEmployee("halfday", employeeId)}>
                  Halfday
                 </button>
