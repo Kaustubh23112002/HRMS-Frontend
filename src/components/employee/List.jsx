@@ -32,7 +32,7 @@ const List = () => {
               <img
                 width={50}
                 className="rounded-full"
-                src={`https://hrms-backend-o2gb.onrender.com/${emp.userId.profileImage}`}
+                src={emp.userId.profileImage}
               />
             ),
             action: <EmployeeButtons DepId={emp._id} />,
