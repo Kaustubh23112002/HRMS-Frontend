@@ -68,6 +68,11 @@ export const columns = [
                  onClick={() => markEmployee("leave", employeeId)}>
                  Leave
                 </button>
+                <button
+                 className='px-4 py-2 bg-blue-900 text-black'
+                 onClick={() => markEmployee("halfday", employeeId)}>
+                 Halfday
+                </button>
             </div>
         ) : (
             <p className='bg-gray-100 w-20 text-center py-2 rounded'>{status}</p>
