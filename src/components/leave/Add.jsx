@@ -59,6 +59,7 @@ const Add = () => {
                             <option value="Unpaid Leave">Unpaid Leave</option>
                             <option value="Paid Leave">Paid Leave</option>
                             <option value="Bereavement Leave">Bereavement Leave</option>
+                            <option value="Halfday">Halfday</option>
                         </select>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
