@@ -54,10 +54,11 @@ const Add = () => {
                         className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
                         required
                         >
-                            <option value="">Select Department</option>
+                            <option value="">Select Leave</option>
                             <option value="Sick Leave">Sick Leave</option>
-                            <option value="Casual Leave">Casual Leave</option>
-                            <option value="Annual Leave">Annual Leave</option>
+                            <option value="Unpaid Leave">Unpaid Leave</option>
+                            <option value="Paid Leave">Paid Leave</option>
+                            <option value="Bereavement Leave">Bereavement Leave</option>
                         </select>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
