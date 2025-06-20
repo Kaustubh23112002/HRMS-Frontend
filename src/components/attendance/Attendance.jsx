@@ -69,7 +69,7 @@ const Attendance = () => {
       <div className="flex justify-between items-center mt-4">
         <input
           type="text"
-          placeholder="search By Dep Name"
+          placeholder="search By Name"
           className="px-4 py-0.5 border"
           onChange={handleFilter}
         />
